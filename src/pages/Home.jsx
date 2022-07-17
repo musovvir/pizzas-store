@@ -44,7 +44,6 @@ const Home = () => {
 	// Если был первый рендер, то запрашиваем пиццы
 	React.useEffect(() => {
 		getPizzas();
-		// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, [categoryId, sort.sortProperty, searchValue, currentPage]);
 
 	// Если изменили параметры и был первый рендер
